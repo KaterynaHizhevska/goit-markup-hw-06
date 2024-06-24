@@ -142,7 +142,6 @@ header {
 address {
   display: flex;
   gap: 40px;
-  padding: 24px 0 24px;
 }
 
 .header-address-list {
@@ -432,11 +431,9 @@ address {
   color: #404bbf;
 }
 
-.menu-icon {
-  width: 280px;
-  height: 40px;
-  margin-top: 40px;
-}
+/* .menu-icon {
+
+} */
 
 .menu-list-icon {
   display: flex;
@@ -557,13 +554,15 @@ address {
     max-width: 768px;
   }
 
-  @media screen and (min-rezolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/office-tablet@2x.jpg);
+        url(../images/Dark-bg-tablet-2x.jpg);
     }
   }
 
@@ -588,20 +587,22 @@ address {
     max-width: 1440px;
   }
 
-  @media screen and (min-rezolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/office-desk@2x.jpg);
+        url(../images/people-office-desk-2x.jpg);
     }
   }
+}
 
-  .hero-title {
-    font-size: 56px;
-    max-width: 496px;
-  }
+.hero-title {
+  font-size: 56px;
+  max-width: 496px;
 }
 
 /* SECTION COMPANY */
@@ -913,8 +914,10 @@ address {
   width: 288px;
 }
 
-/* .portfolio-img {
-} */
+.portfolio-img {
+  margin-top: 48px;
+}
+
 .portfolio-subtitle {
   font-family: var(--font-family);
   font-weight: 500;
@@ -1180,7 +1183,7 @@ address {
   }
 
   .container-nar {
-    width: 552px;
+    width: 584px;
     align-items: baseline;
   }
 
@@ -1188,6 +1191,7 @@ address {
     display: flex;
     gap: 72px 24px;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .footer {
@@ -1197,6 +1201,7 @@ address {
 
   .container-footer-logo {
     margin-bottom: 0;
+    text-align: left;
   }
 
   .footer-logo-iris-link {
